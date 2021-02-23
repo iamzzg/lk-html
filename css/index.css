@@ -1,0 +1,275 @@
+/**************************** 通用的样式************************* */
+*{
+    list-style: none;
+}
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    color: #000;
+}
+
+.btn-register {
+    color: #fff;
+    background-color: #0ab4f7;
+    border-color: #0ab4f7;
+  }
+  .btn-register:hover,
+  .btn-register:focus,
+  .btn-register:active,
+  .btn-register.active {
+    color: #fff;
+    background-color: #07a3e0;
+    border-color: #0791c7;
+  }
+  .btn-register.disabled:hover,
+  .btn-register.disabled:focus,
+  .btn-register.disabled:active,
+  .btn-register.disabled.active,
+  .btn-register[disabled]:hover,
+  .btn-register[disabled]:focus,
+  .btn-register[disabled]:active,
+  .btn-register[disabled].active,
+  fieldset[disabled] .btn-register:hover,
+  fieldset[disabled] .btn-register:focus,
+  fieldset[disabled] .btn-register:active,
+  fieldset[disabled] .btn-register.active {
+    color: #fff;
+    background-color: #0ab4f7;
+    border-color: #0ab4f7;
+  }
+
+
+  /* 字体图标 */
+  @font-face{
+      font-family: lk;
+      src: url('../fonts/lk.eot') format("embedded-opentype"),
+      url('../fonts/lk.svg') format("svg"),
+      url('../fonts/lk.ttf') format("truetype"),
+      url('../fonts/lk.woff') format("woff");
+  }
+[class^='icon-'],
+[class*=' icon-']{
+    font-family: lk;
+    font-style: normal;
+}
+
+#lk_about .title,
+#lk_hot .title,
+#lk_link .title{
+    margin-top: 40px;
+    margin-bottom: 15px;
+}
+#lk_about .row p,
+#lk_hot .row p,
+#lk_link .row p{
+    line-height: 29px;
+    font-size: 15px;
+}
+
+
+
+/**************************** 通用的样式************************* */
+
+
+
+/**************************** 头部的样式************************* */
+#lk_header .top-bar{
+    height: 40px;
+    border-bottom: 1px solid #e0e0e0;
+    line-height: 39px;
+}
+#lk_header .top-bar .container .row>div+div{
+    border-left: 1px solid #e0e0e0;
+}
+#lk_header .top-bar .container .row .top-bar-1 a{
+    position: relative;
+}
+#lk_header .top-bar .container .row .top-bar-1 a img{
+    display: none;
+}
+#lk_header .top-bar .container .row .top-bar-1 a:hover img{
+    display: block;
+    position: absolute;
+    left: 50%;
+    margin-left: -65px;
+    margin-top: -10px;
+
+    z-index: 9999;
+}
+
+.icon-phone::before{
+    content: '\e958';
+    font-size: 13px;
+}
+.icon-tel::before{
+    content: '\e942';
+    font-size: 13px;
+}
+
+#lk_header .navbar-lk{
+    background-color: #fff;
+    margin-bottom: 0;
+}
+#lk_header .navbar-lk .navbar-brand{
+     height: 70px;
+     padding: 10px 15px;
+}
+#lk_header .navbar-lk #lk_nav a{
+    height: 70px;
+    line-height: 40px;
+}
+#lk_header .navbar-lk #lk_nav li.active a,
+#lk_header .navbar-lk #lk_nav li:hover a{
+    background-color: transparent;
+    border-bottom: 2px solid #0ab4f7;
+}
+#lk_header .navbar-lk .navbar-toggle {
+    margin-top: 18px;
+}
+/**************************** 头部的样式************************* */
+
+
+ 
+
+/**************************** 轮播图的样式************************* */
+
+@media screen and (min-width:800px){
+    #lk_carousel .carousel-inner .item{
+        height: 410px;
+        /* background: no-repeat center center; */
+        background-size: cover;
+        background-position: center center;
+    }
+}
+@media screen and (max-width:800px){
+    #lk_carousel .carousel-inner .item img{
+        width: 100%;
+    }
+}
+/**************************** 轮播图的样式************************* */
+
+
+
+
+/**************************** 关于我们的样式************************* */
+
+/**************************** 关于我们的样式************************* */
+
+
+
+
+/**************************** 产品特色的样式************************* */
+#lk_product{
+    background-color: #F0F0F0;
+    padding:30px 0;
+}
+#lk_product .nav li a{
+    background-color: transparent;
+    font-size: 20px;
+    color: #999999;
+    border: none;
+}
+#lk_product .nav li.active a{
+    border-bottom: 2px solid #0ab4f7;
+    color: black;
+}
+
+#lk_product .tab-content{
+    padding-top: 20px;
+}
+#lk_product .tab-content .pd-left{
+    padding-top: 40px;
+}
+#pd-one-1{
+    margin: 15px 0;
+}
+#pd-one-2 .breadcrumb{
+    background-color: transparent;
+}
+#pd-one-4{
+    padding-top: 20px;
+}
+
+/**************************** 产品特色的样式************************* */
+
+
+
+
+/**************************** 热门课程的样式************************* */
+#lk_hot .lesson{
+    padding: 15px 10px;
+}
+#lk_hot .lesson .media-left{
+    width: 20%;
+}
+#lk_hot .lesson .media-body{
+    width: 60%;
+    vertical-align: middle;
+}
+#lk_hot .lesson .media-right{
+    width: 20%;
+    vertical-align: middle;
+    font-size: 16px;
+    text-align: left;
+}
+/**************************** 热门课程的样式************************* */
+
+
+
+
+
+/**************************** 友情链接的样式************************* */
+#lk_link .logo {
+    text-align: center;
+}
+#lk_link .logo li{
+    display: inline-block;
+    margin: 15px;
+}
+/**************************** 友情链接的样式************************* */
+
+
+
+/**************************** 底部的样式************************* */
+#lk_footer{
+    width: 100%;
+    height: 200px;
+    background: url('../img/ft_bg.png') no-repeat center;
+    color: #fff;
+    background-size: cover;
+    padding-top: 10px;
+}
+#lk_footer .row ul li{
+    padding-bottom: 10px;
+}
+#lk_footer .row ul a{
+    color: #fff;
+    font-size: 18px;
+}
+#lk_footer .row .one,#lk_footer .row .two{
+    border-right: 1px solid #666666;
+    height: 190px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+#lk_footer .row .two{
+    flex-direction: column;
+}
+#lk_footer .row .three{
+    height: 190px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+#lk_footer .row .three a{
+    text-decoration: none;
+}
+
+
+
+
+
+
+
+/**************************** 底部的样式************************* */
